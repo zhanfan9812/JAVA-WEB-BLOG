@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/start.css"/>
+    <title>登录</title>
+</head>
+<body class="bodycss">
+<p class="login_welcome">WEICOME</p>
+<p class="tips">请登录</p>
+<form action="/LoginServlet">
+    <table align="center" width="500" class="login_table">
+        <tr>
+            <td>用户名:</td>
+            <td><input name="username" type="text" placeholder="username" class="login_button2"/></td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td><input name="password" type="password" placeholder="password" class="login_button2"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit"name="submit" value="登录" class="login_button1"/>
+            </td>
+        </tr>
+    </table>
+</form>
+<div class="jump"><div class="jump2"><a href="register.html">未注册账号？点击此注册</a></div></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/start.css"/>
+    <script type="text/javascript" src="../js/checkTable.js"></script>
+    <title>用户注册</title>
+</head>
+<body class="bodycss">
+<p class="register_welcome">WEICOME</p>
+<div class="tips">请注册</div>
+    <form onsubmit="return checkForm()" action="/RegisterServlet">
+        <table align="center" width="500" class="register_table">
+            <tr>
+                <td>用户名</td>
+                <td><input name="username" id="username" type="text" onBlur="return checkUsername()"/></td>
+                <td>
+                    <span id="tips_username"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input name="password" id="password" type="password" onBlur="return checkPassword()"/></td>
+                <td>
+                    <span id="tips_password"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码</td>
+                <td><input name="pwdrepeat" id="pwdrepeat" type="password" onBlur="return checkPwdrepeat()"/></td>
+                <td>
+                    <span id="tips_pwdrepeat"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input name="gender" type="radio" value="male"/>男
+                    <input name="gender" type="radio" value="female"/>女
+                </td>
+                <td>
+                    <span id="tips_gender"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>出生日期</td>
+                <td><input name="birthday" id="birthday" type="date" onblur="return checkDate()"></td>
+                <td>
+                    <span id="tips_birthday"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好</td>
+                <td>
+                    <input name="hobby" type="checkbox" value="reading"/>阅读
+                    <input name="hobby" type="checkbox" value="music"/>音乐
+                    <input name="hobby" type="checkbox" value="sports"/>运动
+                </td>
+                <td>
+                    <span id="tips_hobby"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>电子邮件</td>
+                <td><input name="email" id="email" type="email" onblur="return checkEmail()"></td>
+                <td>
+                    <span id="tips_email"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>手机号码</td>
+                <td><input name="telephone" id="telephone" type="number"onblur="return checkTelephone()"></td>
+                <td>
+                    <span id="tips_telephone"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea name="introduction" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit"name="submit" value="提交"/>
+                    <input type="reset"name="reset" value="重置"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
